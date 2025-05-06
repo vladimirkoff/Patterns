@@ -1,6 +1,3 @@
-//
-//  AppDelegate.swift
-//  PDFConverterV2
 
 import UIKit
 
