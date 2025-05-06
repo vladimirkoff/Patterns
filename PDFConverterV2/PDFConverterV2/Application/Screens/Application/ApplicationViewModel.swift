@@ -14,16 +14,14 @@ final class ApplicationViewModel {
 
     private let transitions: Transitions
     private let managersStorage: ManagersStorage
-    private let realmManager: RealmManager
-    private let fileSystemManager: FileSystemManager
+    private let realmManager = RealmManager.shared
+    private let fileSystemManager = FileSystemManager.shared
     
     var indexPath: IndexPath?
     
     init(transitions: Transitions, managersStorage: ManagersStorage) {
         self.transitions = transitions
         self.managersStorage = managersStorage
-        self.realmManager = managersStorage.recieve(managerType: RealmManager.self)
-        self.fileSystemManager = managersStorage.recieve(managerType: FileSystemManager.self)
         
         getDocuments()
         bind()

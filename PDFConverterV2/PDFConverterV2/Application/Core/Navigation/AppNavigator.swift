@@ -5,10 +5,8 @@ final class AppNavigator: Navigator, Transitions {
     
     override func register() {
         super.register()
-        managersStorage.register(manager: ManagersFactory.makeRealmManager())
         managersStorage.register(manager: ManagersFactory.makeImageConverterManager())
         managersStorage.register(manager: ManagersFactory.makeUserDefaultsManager())
-        managersStorage.register(manager: ManagersFactory.makeFilesSystemManager())
     }
     
     func showLaucnh() {

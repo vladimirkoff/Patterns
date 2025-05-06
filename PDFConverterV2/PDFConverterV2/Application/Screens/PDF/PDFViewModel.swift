@@ -16,7 +16,7 @@ final class PDFViewModel {
     private let transitions: Transitions
     private let managersStorage: ManagersStorage
     private let imageConverterManager: ImageConverterManager
-    private let realmManager: RealmManager
+    private let realmManager = RealmManager.shared
     private let userDefaultsManager: UserDefaultsManager
     
     private(set) var snapshotRelay = BehaviorRelay<Snapshot?>.init(value: nil)
@@ -40,7 +40,6 @@ final class PDFViewModel {
         self.transitions = transitions
         self.managersStorage = managersStorage
         self.imageConverterManager = managersStorage.recieve(managerType: ImageConverterManager.self)
-        self.realmManager = managersStorage.recieve(managerType: RealmManager.self)
         self.selectedImages = selectedImages
         self.userDefaultsManager = managersStorage.recieve(managerType: UserDefaultsManager.self)
         

@@ -13,7 +13,7 @@ final class DocumentViewModel {
     private let disposeBag = DisposeBag()
     
     private let transitions: Transitions
-    private let realmManager: RealmManager
+    private let realmManager = RealmManager.shared
     private let userDefaultsManager: UserDefaultsManager
     private let imageConverterManager: ImageConverterManager
     
@@ -27,7 +27,6 @@ final class DocumentViewModel {
     init(transitions: Transitions, managersStorage: ManagersStorage, fileModel: FileModel) {
         self.transitions = transitions
         self.fileModel = fileModel
-        self.realmManager = managersStorage.recieve(managerType: RealmManager.self)
         self.userDefaultsManager = managersStorage.recieve(managerType: UserDefaultsManager.self)
         self.imageConverterManager = managersStorage.recieve(managerType: ImageConverterManager.self)
         

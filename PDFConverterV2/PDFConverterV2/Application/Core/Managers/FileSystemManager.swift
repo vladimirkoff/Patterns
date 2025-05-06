@@ -1,7 +1,9 @@
 
 import Foundation
 
-final class FileSystemManager: StorageItem {
+final class FileSystemManager {
+    static let shared = FileSystemManager()
+    private init() {}
     
     func getSelectedFileURL(pdfData: Data, fileName: String) -> URL? {
         guard let documentDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first

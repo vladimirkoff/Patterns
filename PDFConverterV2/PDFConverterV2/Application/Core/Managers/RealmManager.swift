@@ -4,20 +4,21 @@ import RxSwift
 import RxCocoa
 import RealmSwift
 
-final class RealmManager: StorageItem {
+final class RealmManager {
+    static let shared = RealmManager()
     
-    private let realm: Realm
-    
-    private(set) var documentsRelay = BehaviorRelay<[Document]>.init(value: [])
-    private(set) var errorRelay = BehaviorRelay<Bool?>.init(value: nil)
-    
-    init() {
+    private init() {
         do {
             realm = try Realm()
         } catch {
             fatalError("Error initializing Realm: \(error)")
         }
     }
+    
+    private let realm: Realm
+    
+    private(set) var documentsRelay = BehaviorRelay<[Document]>.init(value: [])
+    private(set) var errorRelay = BehaviorRelay<Bool?>.init(value: nil)
     
     func getDocuments() {
         DispatchQueue.main.async { [weak self] in
