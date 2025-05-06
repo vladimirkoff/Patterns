@@ -1,0 +1,76 @@
+
+"ApplicationScreen.title" = "PDF Converter";
+"ApplicationScreen.subTitle" = "Convert your files to PDF";
+"SettingsScreen.title" = "Settings";
+"PremiumScreen.title" = "Go to premium";
+"ScannerScreen.title" = "Scanner";
+"PhotoToPDF.title" = "Photo to PDF";
+"FileToPDF.title" = "File to PDF";
+
+"SettingsScreen.goToPremium" = "Go to premium";
+"SettingsScreen.feedback" = "Feedback";
+"SettingsScreen.rateUs" = "Rate us";
+"SettingsScreen.share" = "Share";
+"SettingsScreen.privacyPolicy" = "Privacy Policy";
+"SettingsScreen.termsOfService" = "Terms of service";
+
+"Menu.scanner" = "Scanner";
+"Menu.gallery" = "Import from Gallery";
+"Menu.files" = "Import from Files";
+
+"Menu.delete" = "Delete";
+"Menu.share" = "Share";
+
+"Product.default" = "3-day trial / Total: $0";
+"week" = "/week";
+"Onboarding.first.title" = "Welcome to the\nPDF Converter!";
+"Onboarding.second.title" = "Fast-track your\ntime to digitize";
+"Onboarding.third.title" = "Customize files\nwith application";
+"Onboarding.first.subtitle" = "Take your document digitization to the\nnext level with this powerful PDF tool";
+"Onboarding.second.subtitle" = "Make converting digital documents\neasy with our app's conversion tool";
+"Onboarding.third.subtitle" = "Seamlessly convert your files into PDF\nwith the help of this magical pocket tool";
+"Alert.delete.title" = "Are you sure you want to\n delete the file?";
+"Alert.pdfPreview.title" = "Your PDF is ready!";
+"Alert.delete.selectedButton" = "No";
+"Alert.pdfPreview.selectedButton" = "Go to homescreen";
+"Alert.pdfPreview.buton" = "Preview";
+"Alert.delete.button" = "Yes";
+"ErrorAlert.title" = "Something went wrong.";
+"ErrorAlert.cancel" = "Cancel";
+"ErrorAlert.restoreSubtitle" = "Please make sure that you have an active subscription within Apple ID you're using.";
+"ErrorAlert.purchaseSubtitle" = "Please try again if you would like to\nproceed further with all features.";
+"ErrorAlert.tryAgain" = "Try Again";
+"Converting" = "Converting...";
+"Convert" = "Convert";
+"TipLabel.text" = "Click on “+” if you want\n to take another photo";
+"Restore" = "Restore";
+"Terms" = "Terms";
+"Privacy" = "Privacy Policy";
+
+"Paywall.title" = "Streamline your\nwork processes";
+"Trial.title" = "Explore this app\nwith a free period";
+"Paywall.subtitle" = "Way for unlimited conversions to PDF\nand custom them for ";
+"Trial.subtitle" = "Convert documents without borders\nafter a 3-day trial and ";
+"ObButton.title" = "Continue";
+
+"TrialButton.title" = "Subscribe";
+"PaywallButton.title" = "Subscribe";
+
+"weekly" = "Weekly";
+"monthly" = "Monthly";
+"yearly" = "Yearly";
+"perWeek" = "per week";
+"perMonth" = "per month";
+"perYear" = "per year";
+"image" = "image";
+"scanner" = "scanner";
+
+"SpecialOfferTitle" = "Explore this app\nwith a free period";
+
+
+
+
+
+
+
+
