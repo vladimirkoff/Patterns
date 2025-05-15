@@ -62,6 +62,7 @@
 		8527FA962D856CCC00020EF8 /* DocumentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8527FA952D856CCC00020EF8 /* DocumentBuilder.swift */; };
 		8527FA982D856E9900020EF8 /* DocumentRealmBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8527FA972D856E9900020EF8 /* DocumentRealmBuilder.swift */; };
 		8527FA9B2D857B1A00020EF8 /* StorageFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8527FA9A2D857B1A00020EF8 /* StorageFacade.swift */; };
+		852CB18B2DD61C1E006B6311 /* FileModelBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852CB18A2DD61C1E006B6311 /* FileModelBuilder.swift */; };
 		8533F5202BBD459400EA7DBF /* PDFPreviewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8533F51F2BBD459400EA7DBF /* PDFPreviewItem.swift */; };
 		8533F5232BBD46F300EA7DBF /* PDFBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8533F5222BBD46F300EA7DBF /* PDFBaseViewController.swift */; };
 		8533F5252BBD582B00EA7DBF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8533F5242BBD582B00EA7DBF /* Constants.swift */; };
@@ -147,6 +148,7 @@
 		8527FA952D856CCC00020EF8 /* DocumentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentBuilder.swift; sourceTree = "<group>"; };
 		8527FA972D856E9900020EF8 /* DocumentRealmBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentRealmBuilder.swift; sourceTree = "<group>"; };
 		8527FA9A2D857B1A00020EF8 /* StorageFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageFacade.swift; sourceTree = "<group>"; };
+		852CB18A2DD61C1E006B6311 /* FileModelBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileModelBuilder.swift; sourceTree = "<group>"; };
 		8533F51F2BBD459400EA7DBF /* PDFPreviewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFPreviewItem.swift; sourceTree = "<group>"; };
 		8533F5222BBD46F300EA7DBF /* PDFBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFBaseViewController.swift; sourceTree = "<group>"; };
 		8533F5242BBD582B00EA7DBF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -465,6 +467,7 @@
 			children = (
 				8527FA952D856CCC00020EF8 /* DocumentBuilder.swift */,
 				8527FA972D856E9900020EF8 /* DocumentRealmBuilder.swift */,
+				852CB18A2DD61C1E006B6311 /* FileModelBuilder.swift */,
 			);
 			path = Builders;
 			sourceTree = "<group>";
@@ -631,9 +634,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PDFConverterV2/Pods-PDFConverterV2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PDFConverterV2/Pods-PDFConverterV2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -689,6 +696,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8533F5232BBD46F300EA7DBF /* PDFBaseViewController.swift in Sources */,
+				852CB18B2DD61C1E006B6311 /* FileModelBuilder.swift in Sources */,
 				852088462BAC4B2600873153 /* UIMenu+Extensions.swift in Sources */,
 				0A026A782BB2CCA4005CE3E6 /* Int+Extensions.swift in Sources */,
 				859CF1252BB2E48C00BA3457 /* ImageConverterManager.swift in Sources */,

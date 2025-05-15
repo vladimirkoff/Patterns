@@ -382,8 +382,15 @@ private extension ApplicationViewController {
 extension ApplicationViewController: UIDocumentPickerDelegate {
     func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentsAt urls: [URL]) {
         guard let fileURL = urls.first else { return }
-        let fileModel = FileModel(fileURL: fileURL, fileName: fileURL.lastPathComponent)
-        viewModel.showDocument(fileModel: fileModel)
+        do {
+            let fileModel = try FileModelBuilder()
+                .setFileName(fileURL.lastPathComponent)
+                .setFileURL(fileURL)
+                .build()
+            viewModel.showDocument(fileModel: fileModel)
+        } catch {
+            print(error.localizedDescription)
+        }
     }
 }
 
